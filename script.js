@@ -9,3 +9,10 @@ registerBtn.addEventListener('click', () => {
 loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
+// Optional: Check screen size if specific behavior is needed for mobile
+window.addEventListener('resize', () => {
+    if (window.innerWidth <= 768) {
+        console.log('Mobile view active');
+        // Add any specific mobile behavior here if needed
+    }
+});
