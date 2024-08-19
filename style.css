@@ -6,26 +6,24 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', 'Lena', sans-serif;
-    
-                                                
 }
 
 /* Logo Styles */
 .logo-container {
     position: absolute;
-    top: 2px;
+    top: 20px; /* Adjust top space */
     left: 20px;
     z-index: 10; /* Ensure the logo stays above other elements */
 }
 
 .logo-container img {
-    width: 180px; /* logo size */
+    width: 150px; /* Adjust logo size for smaller screens */
     height: auto; 
 }
 
 /* Background with Blur Effect */
 body {
-    background-image: url('loginWeb_Image.jpg'); /* body background image*/
+    background-image: url('loginWeb_Image.jpg'); /* body background image */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -37,7 +35,7 @@ body {
     overflow: hidden;
 }
 
-/*Enhance the blur effect of the background image */
+/* Enhance the blur effect of the background image */
 body::before {
     content: '';
     position: absolute;
@@ -48,7 +46,7 @@ body::before {
     background-image: url('loginWeb_Image.jpg'); /* body background */
     background-size: cover;
     background-position: center;
-    filter: blur(10px); /* Adjust the blur level of the image*/
+    filter: blur(10px); /* Adjust the blur level of the image */
     z-index: -1;
 }
 
@@ -91,6 +89,7 @@ body::before {
 span {
     font-size: 14px; /* Adjust as needed to ensure consistency */
 }
+
 .container span {
     font-size: 12px;
 }
@@ -199,6 +198,7 @@ span {
     height: 40px;
 }
 
+/* Adjust Toggle for Smaller Screens */
 .toggle-container {
     position: absolute;
     top: 0;
@@ -265,6 +265,7 @@ span {
     transform: translateX(200%);
 }
 
+/* Footer Styles */
 footer {
     background-color: black;
     color: white;
@@ -278,3 +279,37 @@ footer {
     z-index: 1000;
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        border-radius: 20px;
+        min-height: auto;
+    }
+
+    .container p {
+        font-size: 12px;
+    }
+
+    .container span {
+        font-size: 10px;
+    }
+
+    .container a {
+        font-size: 11px;
+    }
+
+    .container button {
+        font-size: 11px;
+        padding: 8px 30px;
+    }
+
+    .container input {
+        font-size: 12px;
+    }
+
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+    }
+}
