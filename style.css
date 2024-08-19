@@ -312,4 +312,21 @@ footer {
         width: 30px;
         height: 30px;
     }
+
+    /* Adjust toggle on mobile view */
+    .toggle-container {
+        width: 100%; /* Ensure the toggle covers full width */
+        left: 0; /* Align the toggle to start from the left edge */
+        height: auto;
+    }
+
+    .toggle {
+        width: 100%; /* Adjust toggle width to full width on mobile */
+        left: 0;
+    }
+
+    .toggle-panel {
+        width: 100%;
+        padding: 0 20px; /* Adjust padding for smaller screens */
+    }
 }
